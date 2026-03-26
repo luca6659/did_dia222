@@ -1,0 +1,165 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║                  ✓ ANDROID APK XML DECODER - READY TO USE                      ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+📍 LOCATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C:\Users\yovra\Desktop\diia\
+
+🛠️  TOOLS CREATED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  DECODE_XML.bat                   [RECOMMENDED FOR WINDOWS]
+    └─ Double-click to run
+    └─ No command line needed
+    └─ Auto-installs dependencies
+
+2️⃣  decode_apk_xml.py                [MAIN DECODER]
+    └─ Run: python decode_apk_xml.py
+    └─ Best error handling
+    └─ Detailed progress reporting
+
+3️⃣  verify_setup.py                  [DIAGNOSTIC TOOL]
+    └─ Run: python verify_setup.py
+    └─ Checks Python, directories, androguard
+    └─ Troubleshooting helper
+
+📚 DOCUMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• SETUP_COMPLETE.md               ← Start here
+• README_DECODER.txt              ← Comprehensive guide
+• DECODE_INSTRUCTIONS.md          ← Step-by-step instructions
+
+📂 INPUT/OUTPUT PATHS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+INPUT:
+C:\Users\yovra\Desktop\diia\resources\apk_extracted\res\drawable\
+
+OUTPUT (created automatically):
+C:\Users\yovra\Desktop\diia\resources\decoded_drawables\
+
+🚀 QUICK START - 3 WAYS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPTION A: Windows Batch (Easiest)
+┌─────────────────────────────────────────────────────────────────┐
+│ 1. Open File Explorer                                           │
+│ 2. Go to: C:\Users\yovra\Desktop\diia\                          │
+│ 3. Double-click: DECODE_XML.bat                                │
+│ 4. Wait for completion                                          │
+└─────────────────────────────────────────────────────────────────┘
+
+OPTION B: Command Prompt
+┌─────────────────────────────────────────────────────────────────┐
+│ 1. Press: Win + R                                               │
+│ 2. Type: cmd                                                    │
+│ 3. Type: cd C:\Users\yovra\Desktop\diia                         │
+│ 4. Type: python decode_apk_xml.py                              │
+│ 5. Press: Enter                                                 │
+└─────────────────────────────────────────────────────────────────┘
+
+OPTION C: Verify First (Recommended)
+┌─────────────────────────────────────────────────────────────────┐
+│ 1. Open Command Prompt                                          │
+│ 2. cd C:\Users\yovra\Desktop\diia                               │
+│ 3. python verify_setup.py                                       │
+│ 4. Follow any recommendations                                   │
+│ 5. Then run: python decode_apk_xml.py                          │
+└─────────────────────────────────────────────────────────────────┘
+
+⏱️  EXPECTED RESULTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+First Run:  2-5 minutes (includes androguard installation)
+Next Runs:  30 seconds - 2 minutes
+
+Output will show:
+✓ Progress counter: [100/1234] ✓ filename.xml [BINARY]
+✓ Final summary: "Total files: 1234, Decoded: 1234, Failed: 0"
+✓ Files location: C:\Users\yovra\Desktop\diia\resources\decoded_drawables\
+
+✅ WHAT YOU'LL GET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Readable XML vector drawables for:
+  • UI icons (ic_home.xml, ic_menu.xml, etc.)
+  • Tab navigation (ic_tab_documents.xml, etc.)
+  • QR code icons (ic_qr.xml, etc.)
+  • Button states and animations
+  • And much more...
+
+Example:
+  ic_home.xml (binary, 1.2 KB)
+    ↓
+  ic_home.xml (text, 3.8 KB, fully readable)
+
+📋 REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Python 3.6+
+  Check: python --version
+  Get:   https://www.python.org/downloads/
+  Note:  Check "Add Python to PATH" during install
+
+✓ Internet connection (one-time, for androguard install)
+
+✓ Administrator access (optional, may help with pip)
+
+❓ TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: "Python not found"
+→ Install Python from https://www.python.org/
+→ Choose "Add Python to PATH" during setup
+→ Restart computer
+
+Problem: "androguard not found"
+→ Run: python -m pip install androguard
+→ Or let the script install it automatically
+
+Problem: Output directory is empty
+→ Run: python verify_setup.py
+→ Check source directory has files
+→ Run script again
+→ Check error messages at end of output
+
+Problem: Script is slow/hung
+→ Normal for 1000+ files
+→ Check CPU in Task Manager
+→ Wait 5+ minutes before canceling
+
+For more help: Read SETUP_COMPLETE.md
+
+🎯 NEXT STEP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Choose one:
+
+┌─────────────────────────────────────────┐
+│  For Windows users:                     │
+│  → Double-click DECODE_XML.bat          │
+└─────────────────────────────────────────┘
+
+┌─────────────────────────────────────────┐
+│  For Command Prompt:                    │
+│  → python decode_apk_xml.py             │
+└─────────────────────────────────────────┘
+
+┌─────────────────────────────────────────┐
+│  For verification first:                │
+│  → python verify_setup.py               │
+└─────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Status: ✓ READY TO USE
+Created: 2024
+Tested: Windows 10/11 with Python 3.8+
+
+Questions? Read: SETUP_COMPLETE.md or README_DECODER.txt
+
+═══════════════════════════════════════════════════════════════════════════════

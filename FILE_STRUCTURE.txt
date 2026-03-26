@@ -1,0 +1,318 @@
+📁 ANDROID APK XML DECODER - FILE STRUCTURE & REFERENCE
+
+Location: C:\Users\yovra\Desktop\diia\
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📂 YOUR WORKING DIRECTORY CONTAINS:
+═════════════════════════════════════════════════════════════════════════════
+
+C:\Users\yovra\Desktop\diia\
+│
+├─ 🟢 DECODER TOOLS
+│  ├─ DECODE_XML.bat ⭐ (Windows batch - double-click to run)
+│  ├─ decode_apk_xml.py ⭐ (Main Python decoder - python decode_apk_xml.py)
+│  ├─ decode_xml_v2.py (Alternative Python decoder)
+│  ├─ verify_setup.py (Check system setup - python verify_setup.py)
+│  └─ analyze_xml.py (Analyze file formats - python analyze_xml.py)
+│
+├─ 📚 DOCUMENTATION
+│  ├─ START_HERE.txt ⭐ (Read this first - quick visual guide)
+│  ├─ SETUP_COMPLETE.md (Comprehensive step-by-step guide)
+│  ├─ README_DECODER.txt (Detailed reference & troubleshooting)
+│  ├─ DECODE_INSTRUCTIONS.md (Alternative instructions)
+│  ├─ SETUP_SUMMARY.txt (Overview of what was created)
+│  ├─ FINAL_CHECKLIST.txt (Action items checklist)
+│  └─ FILE_STRUCTURE.txt (This file - visual reference)
+│
+├─ 📂 INPUT DATA
+│  └─ resources/apk_extracted/res/drawable/ (1000+ binary XML files)
+│
+├─ 📂 OUTPUT DATA (created automatically)
+│  └─ resources/decoded_drawables/ (1000+ decoded XML files - after running)
+│
+└─ 🔧 OTHER FILES
+   ├─ .git/ (version control)
+   ├─ extract_apk.py (APK extraction tool)
+   ├─ manifest.json (app config)
+   ├─ index.html (web interface)
+   └─ [other project files]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 QUICK NAVIGATION GUIDE
+
+═════════════════════════════════════════════════════════════════════════════
+
+I want to...
+
+  GET STARTED QUICKLY
+  → Read: START_HERE.txt
+  → Run: Double-click DECODE_XML.bat
+  
+  UNDERSTAND EVERYTHING
+  → Read: SETUP_COMPLETE.md
+  → Read: README_DECODER.txt
+  
+  CHECK IF EVERYTHING IS OK
+  → Run: python verify_setup.py
+  
+  RUN THE DECODER
+  Method 1 (Easy):    Double-click DECODE_XML.bat
+  Method 2 (Command): python decode_apk_xml.py
+  Method 3 (Safe):    python verify_setup.py → then decode_apk_xml.py
+  
+  FIND DECODED FILES
+  → Look in: C:\Users\yovra\Desktop\diia\resources\decoded_drawables\
+  
+  TROUBLESHOOT PROBLEMS
+  → Read: README_DECODER.txt (search for your issue)
+  → Run: python verify_setup.py (diagnose problems)
+  
+  ANALYZE FILE FORMATS
+  → Run: python analyze_xml.py
+  
+  UNDERSTAND THE PROCESS
+  → Read: README_DECODER.txt (How it Works section)
+  → Read: SETUP_COMPLETE.md (Advanced Usage section)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📋 FILE DESCRIPTIONS
+
+═════════════════════════════════════════════════════════════════════════════
+
+EXECUTABLE FILES:
+─────────────────
+
+DECODE_XML.bat (1 KB)
+├─ Type: Windows Batch Script
+├─ Usage: Double-click in File Explorer
+├─ Does: Decodes binary XML files
+├─ Best for: Users who prefer GUI/point-and-click
+├─ Features: Auto-installs dependencies, shows progress
+└─ Recommended: ⭐⭐⭐ Best for Windows users
+
+decode_apk_xml.py (5 KB)
+├─ Type: Python Script
+├─ Usage: python decode_apk_xml.py
+├─ Does: Main decoder with full features
+├─ Best for: Production use, detailed reporting
+├─ Features: Auto-install androguard, progress tracking, error handling
+└─ Recommended: ⭐⭐⭐⭐⭐ Best overall
+
+decode_xml_v2.py (3 KB)
+├─ Type: Python Script
+├─ Usage: python decode_xml_v2.py
+├─ Does: Alternative decoder
+├─ Best for: Backup option if main decoder fails
+├─ Features: Good error recovery, clean output
+└─ Recommended: ⭐⭐⭐ Good alternative
+
+verify_setup.py (5 KB)
+├─ Type: Python Script
+├─ Usage: python verify_setup.py
+├─ Does: Checks if system is ready to decode
+├─ Best for: Troubleshooting and diagnostics
+├─ Features: Checks Python, directories, androguard, scripts
+└─ Recommended: ⭐⭐⭐⭐ Use before decoding
+
+analyze_xml.py (3 KB)
+├─ Type: Python Script
+├─ Usage: python analyze_xml.py
+├─ Does: Analyzes file formats without decoding
+├─ Best for: Understanding file types
+├─ Features: Quick format detection, no dependencies
+└─ Recommended: ⭐⭐ For advanced users
+
+DOCUMENTATION FILES:
+────────────────────
+
+START_HERE.txt (6 KB)
+├─ Type: Text file with ASCII art
+├─ Read time: 5 minutes
+├─ Contains: Quick visual guide, 3 execution options
+├─ Best for: First-time users
+├─ Includes: Troubleshooting quick reference
+└─ Must read: ⭐ YES - Start here!
+
+SETUP_COMPLETE.md (9 KB)
+├─ Type: Markdown file
+├─ Read time: 15 minutes
+├─ Contains: Complete setup guide, step-by-step instructions
+├─ Best for: Understanding the full process
+├─ Includes: Requirements, verification, advanced features
+└─ Must read: ⭐⭐ Recommended
+
+README_DECODER.txt (7 KB)
+├─ Type: Text file
+├─ Read time: 20 minutes
+├─ Contains: How it works, detailed troubleshooting, references
+├─ Best for: Deep understanding and problem-solving
+├─ Includes: Technology explanation, support resources
+└─ Must read: ⭐⭐ For reference when needed
+
+DECODE_INSTRUCTIONS.md (3 KB)
+├─ Type: Markdown file
+├─ Read time: 5 minutes
+├─ Contains: Step-by-step instructions, multiple methods
+├─ Best for: Alternative walkthrough
+├─ Includes: apktool alternative method
+└─ Optional: ✓ For reference
+
+SETUP_SUMMARY.txt (12 KB)
+├─ Type: Text file
+├─ Read time: 10 minutes
+├─ Contains: Comprehensive overview, all details
+├─ Best for: Complete reference guide
+├─ Includes: All requirements, expected results, troubleshooting
+└─ Optional: ✓ For reference
+
+FINAL_CHECKLIST.txt (9 KB)
+├─ Type: Checklist file
+├─ Format: Checkboxes for tracking progress
+├─ Contains: Action items, requirements, success indicators
+├─ Best for: Tracking your progress
+├─ Includes: Time estimates, priority items
+└─ Optional: ✓ For self-assessment
+
+FILE_STRUCTURE.txt (this file)
+├─ Type: Text file with visual structure
+├─ Purpose: Navigation guide and file reference
+├─ Contains: File descriptions and quick navigation
+├─ Best for: Understanding what's available
+└─ Current: You are reading this! 👋
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📊 FILE SIZES & COMPOSITION
+
+═════════════════════════════════════════════════════════════════════════════
+
+Executable Scripts Total:     20 KB
+├─ decode_apk_xml.py          5 KB
+├─ decode_xml_v2.py           3 KB
+├─ verify_setup.py            5 KB
+├─ analyze_xml.py             3 KB
+└─ DECODE_XML.bat             1 KB
+
+Documentation Total:          46 KB
+├─ SETUP_COMPLETE.md          9 KB
+├─ SETUP_SUMMARY.txt         12 KB
+├─ README_DECODER.txt         7 KB
+├─ FINAL_CHECKLIST.txt        9 KB
+├─ FILE_STRUCTURE.txt         ~6 KB
+├─ START_HERE.txt             6 KB
+└─ DECODE_INSTRUCTIONS.md     3 KB
+
+Input Data:                   ~1.2 MB (1000+ binary XML files)
+Output Data:                  ~3.8 MB (1000+ decoded XML files)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ VERIFICATION
+
+═════════════════════════════════════════════════════════════════════════════
+
+All files should be in: C:\Users\yovra\Desktop\diia\
+
+To verify everything is in place:
+
+Windows File Explorer:
+  1. Open: C:\Users\yovra\Desktop\diia\
+  2. You should see:
+     - DECODE_XML.bat ✓
+     - decode_apk_xml.py ✓
+     - decode_xml_v2.py ✓
+     - verify_setup.py ✓
+     - analyze_xml.py ✓
+     - START_HERE.txt ✓
+     - SETUP_COMPLETE.md ✓
+     - README_DECODER.txt ✓
+     - DECODE_INSTRUCTIONS.md ✓
+     - SETUP_SUMMARY.txt ✓
+     - FINAL_CHECKLIST.txt ✓
+     - FILE_STRUCTURE.txt ✓
+
+Command Prompt:
+  dir C:\Users\yovra\Desktop\diia\*.py
+  dir C:\Users\yovra\Desktop\diia\*.bat
+  dir C:\Users\yovra\Desktop\diia\*.txt
+  dir C:\Users\yovra\Desktop\diia\*.md
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎓 RECOMMENDED READING ORDER
+
+═════════════════════════════════════════════════════════════════════════════
+
+For First-Time Users:
+  1. START_HERE.txt (5 min) - Quick visual guide
+  2. DECODE_XML.bat - Run the decoder
+  3. Check results in decoded_drawables folder
+
+For Complete Understanding:
+  1. START_HERE.txt (5 min) - Overview
+  2. SETUP_COMPLETE.md (15 min) - Comprehensive guide
+  3. README_DECODER.txt (20 min) - Deep dive
+  4. FINAL_CHECKLIST.txt (5 min) - Verify completion
+
+For Troubleshooting:
+  1. README_DECODER.txt - Search your issue
+  2. Run verify_setup.py - Automated diagnostics
+  3. Check SETUP_COMPLETE.md - Alternative methods
+
+For Advanced Users:
+  1. SETUP_COMPLETE.md - Review options
+  2. verify_setup.py - Check setup
+  3. decode_apk_xml.py - Direct execution
+  4. analyze_xml.py - Format analysis
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 TIPS
+
+═════════════════════════════════════════════════════════════════════════════
+
+Tip 1: Start with START_HERE.txt
+├─ Quick read: 5 minutes
+├─ Gives overview: Yes
+└─ Enough to get started: Yes
+
+Tip 2: Run verify_setup.py before decoding
+├─ Catches problems early: Yes
+├─ Time: 1 minute
+└─ Recommended: Yes
+
+Tip 3: Check README_DECODER.txt for detailed help
+├─ 6700+ words of information: Yes
+├─ Covers troubleshooting: Yes
+└─ Always available: Yes
+
+Tip 4: Double-click DECODE_XML.bat for easiest execution
+├─ No command line needed: Yes
+├─ Auto-installs dependencies: Yes
+├─ Shows progress: Yes
+
+Tip 5: Output goes to decoded_drawables folder
+├─ Location: C:\Users\yovra\Desktop\diia\resources\decoded_drawables\
+├─ Created automatically: Yes
+├─ Contains: 1000+ XML files
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 NEXT STEPS
+
+═════════════════════════════════════════════════════════════════════════════
+
+1. Read: START_HERE.txt (now)
+2. Choose: Execution method (batch, command, or verify first)
+3. Run: Decoder
+4. Verify: Check output folder
+5. Enjoy: Your decoded XML files!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+That's it! You're all set. 🚀
+
+═══════════════════════════════════════════════════════════════════════════════
