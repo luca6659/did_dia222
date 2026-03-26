@@ -553,14 +553,15 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 // ===== PIN SYSTEM =====
 let pin = "";
-const correctPin = "6439"; // поменяй если нужно
+const correctPin = "1234";
 
 const dots = document.querySelectorAll(".dot");
-const keys = document.querySelectorAll(".key");
+const keys = document.querySelectorAll(".key span");
 
+// центрируем ввод
 function updateDots() {
-    dots.forEach((dot, index) => {
-        if (index < pin.length) {
+    dots.forEach((dot, i) => {
+        if (i < pin.length) {
             dot.classList.add("active");
         } else {
             dot.classList.remove("active");
@@ -570,54 +571,55 @@ function updateDots() {
 
 keys.forEach(key => {
     key.addEventListener("click", () => {
-        const value = key.innerText.trim();
-
-        // удалить
-        if (value === "⌫") {
-            pin = pin.slice(0, -1);
+        if (pin.length < 4) {
+            pin += key.innerText.trim();
             updateDots();
-            return;
-        }
 
-        // цифры
-        if (!isNaN(value) && pin.length < 4) {
-            pin += value;
-            updateDots();
-        }
-
-        // проверка
-        if (pin.length === 4) {
-            setTimeout(() => {
-                if (pin === correctPin) {
-                    document.querySelector(".loginpage").classList.remove("show");
-                    document.querySelector(".mainpage").style.display = "block";
-
-                    setTimeout(() => {
-                        document.querySelector(".mainpage").classList.add("show");
-                    }, 50);
-                } else {
-                    pin = "";
-                    updateDots();
-
-                    document.querySelector(".loginpage").classList.add("shake");
-
-                    setTimeout(() => {
-                        document.querySelector(".loginpage").classList.remove("shake");
-                    }, 300);
-                }
-            }, 200);
+            if (pin.length === 4) {
+                setTimeout(() => {
+                    if (pin === correctPin) {
+                        openApp();
+                    } else {
+                        wrongPin();
+                    }
+                }, 200);
+            }
         }
     });
 });
 
-// ===== LOADING + GREETING =====
-window.addEventListener("load", () => {
+// удаление (если есть кнопка backspace)
+document.querySelectorAll(".backspace").forEach(btn => {
+    btn.addEventListener("click", () => {
+        pin = pin.slice(0, -1);
+        updateDots();
+    });
+});
+
+function wrongPin() {
+    pin = "";
+    updateDots();
+
+    const login = document.querySelector(".loginpage");
+    login.classList.add("shake");
+
     setTimeout(() => {
-        document.querySelector(".loadpage").style.display = "none";
-        document.querySelector(".loginpage").style.display = "block";
+        login.classList.remove("shake");
+    }, 300);
+}
+
+function openApp() {
+    const login = document.querySelector(".loginpage");
+    const main = document.querySelector(".mainpage");
+
+    login.classList.add("fade-out");
+
+    setTimeout(() => {
+        login.style.display = "none";
+        main.style.display = "block";
 
         setTimeout(() => {
-            document.querySelector(".loginpage").classList.add("show");
+            main.classList.add("show");
         }, 50);
-    }, 1500);
-});
+    }, 300);
+}
