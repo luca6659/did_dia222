@@ -911,3 +911,54 @@ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAk8AAAUACAY
 .opis {
 	font-size: 14px;
 }
+
+/* ===== PIN DOTS ===== */
+.pincode {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: 0.2s;
+}
+
+.dot.active {
+    background: #000;
+    transform: scale(1.2);
+}
+
+/* ===== SHAKE ===== */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.3s;
+}
+
+/* ===== SMOOTH PAGES ===== */
+.loginpage, .mainpage {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.loginpage.show, .mainpage.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
