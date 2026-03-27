@@ -20,7 +20,7 @@ var rights_id = "KBE968639";
 
 // Данные COVID-сертификата (если isCovidCertificateEnabled = true)
 var covid_valid_until = "05.09.2026";      // 5 лет с даты рождения
-var covid_certificate_id = "URN:UVCI:01:UA:0E55669376876888B9E2520C4F88930";
+var covid_certificate_id = "URN:UVCI:01:UA:0E556693768";
 
 // Подстановка данных в DOM
 if(isWorking) {
