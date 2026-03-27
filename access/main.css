@@ -911,3 +911,17 @@ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAk8AAAUACAY
 .opis {
 	font-size: 14px;
 }
+
+.green-bar {
+    background: linear-gradient(90deg, #a8e063, #56ab2f);
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.green-bar .marquee {
+    color: #000;
+    font-size: 13px;
+    white-space: nowrap;
+}
