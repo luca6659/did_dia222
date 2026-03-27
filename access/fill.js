@@ -3,7 +3,7 @@ var isWorking = true;
 var isRightsEnabled = true;  // если права не нужны, поставьте false
 var isCovidCertificateEnabled = true;  // если COVID-сертификат не нужен, поставьте false
 
-var fullname = "Бабаков Лука Сергеевич";
+var fullname = "Бабаков Лука Сергійович";
 var name = "Лука";
 var birthdate = "05.09.2011";
 var passport_id = "520471839";
@@ -17,7 +17,7 @@ var rights_id = "KBE968639";
 
 // Данные для COVID-сертификата (если isCovidCertificateEnabled = true)
 var covid_valid_until = "11.03.2022";
-var covid_certificate_id = "URN:UVCI:01:UA:0E55669376876888B9E2520C4F88930";
+var covid_certificate_id = "URN:UVCI:01:UA:0E5566937";
 
 if(isWorking) {
 	for(el of document.getElementsByClassName("birthdate")){
