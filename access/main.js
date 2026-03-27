@@ -550,12 +550,3 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   $('body').html('<body class="nononopage"><div class="nonono installTutorial" style="width: 100%;padding: 1vh;display: flex;flex-wrap: wrap;justify-content: center;"><div class="installPage" style="text-align: center;padding: 15px;"><div class="installName" style="font-size: 20px;font-weight: 600;">Сайт доступен</div><p>Только с мобильных устройств</p></div></div>');
   $('body').addClass('nononopage');
 }
-
-$(document).ready(function () {
-    $('.marquee').marquee({
-        duration: 5000,
-        gap: 50,
-        duplicated: true,
-        startVisible: true
-    });
-});
